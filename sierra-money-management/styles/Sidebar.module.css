@@ -1,0 +1,12 @@
+.container{
+    float: left;
+    /* position: fixed; */
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border: 1px solid black;
+    height: 100vh;
+    background-color: red;
+    transition: width .5s;
+}

@@ -1,0 +1,65 @@
+.container{
+    position: static;
+    border: 2px solid green;
+    width:88%;
+    margin-left: 12%;
+    z-index: 20;
+    transition: width .8s;
+    height: 100%;
+    text-align: center;
+    margin-top: 0;
+    border: 1px solid black;
+}
+.container > div:nth-child(1){
+    background: #a3d2ca;
+    padding: 3% 0;
+}
+.form{
+    border: 1px solid black;
+    width: 60%;
+    padding: 3%;
+    margin: 0 auto;
+}
+.input_div{
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: 0 auto;
+}
+.input_div p{
+    width: 150px;
+    font-size: 22px;
+}
+.form h1{
+    font-size: 40px;
+}
+.form select{
+    width: 20%;
+    height: 5vh;
+    border: 1px solid grey;
+    border-radius: 5%;
+    outline: none;
+    margin: 2%;
+}
+.form input{
+    padding: 1% 0;
+    display: block;
+    margin: 1% 0;
+    border: none;
+    border: 1px solid black;
+    height: 45px;
+    width: 60%;
+    padding-left: 1%;
+}
+.form button{
+    padding: 1.5% 12%;
+    margin: 1%;
+    font-size: 18px;
+    font-weight: 900;
+    border: none;
+    background-color: crimson;
+    color: wheat;
+    border-radius: 3%;
+}
