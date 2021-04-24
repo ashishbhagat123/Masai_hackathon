@@ -15,9 +15,8 @@ const PieChart = ({principle, interest, tenure, rate, emi}) => {
         { amount: 'interest', val: interest },
         { amount: 'principle', val: principle},
       ];
-      console.log(emi)
     return (
-      <>
+      <div className = {styles.wrapper}>
       <h1>Your Monthly Loan EMI: Rs {emi.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</h1>
       <Paper className = {styles.container}>
           <div>
@@ -79,7 +78,7 @@ const PieChart = ({principle, interest, tenure, rate, emi}) => {
         </div>
         </div>
       </Paper>
-      </>
+      </div>
     );
   }
 

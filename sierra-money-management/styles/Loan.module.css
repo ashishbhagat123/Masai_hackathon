@@ -1,26 +1,32 @@
-.container{
+.container {
     position: static;
-    border: 2px solid green;
-    width:88%;
+    width: 85%;
     margin-left: 12%;
     z-index: 20;
-    transition: width .8s;
     height: 100%;
     text-align: center;
     margin-top: 0;
-    border: 1px solid black;
 }
-.container > div:nth-child(1){
-    background: #a3d2ca;
-    padding: 3% 0;
+.container > div:nth-child(1) {
+    background: rgba(54, 69, 71);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    padding: 4% 0;
+    color: white;
+    height: 100vh;
 }
-.form{
-    border: 1px solid black;
+.form {
     width: 60%;
     padding: 3%;
     margin: 0 auto;
+    background: rgba( 21, 21, 21, 0.40 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
 }
-.input_div{
+.input_div {
     display: flex;
     text-align: left;
     align-items: center;
@@ -28,14 +34,14 @@
     width: 70%;
     margin: 0 auto;
 }
-.input_div p{
+.input_div p {
     width: 150px;
     font-size: 22px;
 }
-.form h1{
+.form h1 {
     font-size: 40px;
 }
-.form select{
+.form select {
     width: 20%;
     height: 5vh;
     border: 1px solid grey;
@@ -43,7 +49,7 @@
     outline: none;
     margin: 2%;
 }
-.form input{
+.form input {
     padding: 1% 0;
     display: block;
     margin: 1% 0;
@@ -53,13 +59,21 @@
     width: 60%;
     padding-left: 1%;
 }
-.form button{
+.form button {
     padding: 1.5% 12%;
     margin: 1%;
     font-size: 18px;
     font-weight: 900;
     border: none;
-    background-color: crimson;
     color: wheat;
     border-radius: 3%;
+    background: rgba( 99, 0, 0, 0.90 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 18.5px );
+    -webkit-backdrop-filter: blur( 18.5px );
+    border-radius: 10px;
+    cursor: pointer;
+}
+.form button:hover{
+    filter: brightness(1.8);
 }

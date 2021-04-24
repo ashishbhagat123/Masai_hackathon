@@ -40,8 +40,9 @@ function createData(month, principal, interest, emi, balance) {
 
 const useStyles = makeStyles({
   root: {
-    width: '80%',
-    margin: "3% auto"
+    width: '90%',
+    margin: "3% auto",
+    boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )"
   },
   container: {
     maxHeight: 440,
@@ -75,6 +76,7 @@ const InterestTable = ({report}) => {
 
   return (
       <div className = {styles.container}>
+        <h1>Loan Repayment Schedule</h1>
     <Paper className={classes.root}>
       <TableContainer className={classes.container}>
         <Table stickyHeader aria-label="sticky table">

@@ -40,7 +40,7 @@ const Loan = ({ slide }) => {
             className={styles.container}
             style={
                 slide
-                    ? { width: "88%", marginLeft: "12%" }
+                    ? { width: "85%", marginLeft: "15%" }
                     : { width: "94%", marginLeft: "6%" }
             }
         >

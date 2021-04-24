@@ -5,6 +5,7 @@ import Link from "next/link"
 import Navbar from '../Component/Navbar'
 import Sidebar from '../Component/Sidebar'
 import Loan from './Loan'
+import Chat from './Chat'
 
 export default function Home() {
   const [slide, setSlide] = useState(true);
@@ -17,6 +18,7 @@ export default function Home() {
     <div className={styles.container}>
       <Sidebar slide = {slide} handleSlide = {handleSlide}/>
       <Loan slide = {slide}/>
+      {/* <Chat /> */}
     </div>
   )
 }

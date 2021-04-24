@@ -1,6 +1,12 @@
-.container{
+.container {
     width: 100%;
     background-color: cadetblue;
-    border: 1px solid black;
-    padding: 3% 0;
+    padding: 5% 0;
+    background: rgba(54, 69, 71);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+.container > h1{
+    color: white;
 }

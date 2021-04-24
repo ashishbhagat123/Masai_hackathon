@@ -1,12 +1,45 @@
-.container{
+.container {
     float: left;
     /* position: fixed; */
+    padding-top: 5%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
     position: fixed;
     left: 0;
     top: 0;
     bottom: 0;
-    border: 1px solid black;
     height: 100vh;
-    background-color: red;
-    transition: width .5s;
+    background: rgba( 19, 46, 75, 1.00 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+    overflow: hidden;
 }
+.switch path{
+    cursor: pointer;
+    margin-left: 30px;
+}
+.links{
+    padding: 1% 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 5% 0;
+}
+.links:hover{
+    background-color: black;
+    color: maroon;
+    transform: scale(1.1);
+}
+.links svg{
+    margin: 25px;
+}
+
