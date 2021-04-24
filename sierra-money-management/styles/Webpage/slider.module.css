@@ -1,0 +1,31 @@
+
+.wrapper{
+    height: auto;
+    text-align: center;
+    font-family: 'Abhaya Libre', serif;
+    
+}
+
+.image{
+    object-fit: cover;
+    opacity: 0.4;
+    height: 90vh;
+    width: 100%;
+}
+.mainContainer{
+    max-width: 100%;
+    margin: auto;
+   
+}
+
+.sliderContainer{
+    max-width: 100%;
+    margin: auto ;
+    background: rgba(0, 0, 0, 0.822);
+}
+
+.caption{
+    font-size: px;
+    font-weight: 600;
+
+}
