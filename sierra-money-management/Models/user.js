@@ -7,7 +7,7 @@ const schema = new Schema({
     email: { type: String, required: true},
     password: { type: String, required: true},
     income: { type: Number, required: true},
-    expenditure : [{ type: Number, required: true}]
+    expenditure : { type: Number, required: true}
 }, {
     timestamps: true,
 })
