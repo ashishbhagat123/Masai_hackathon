@@ -1,0 +1,20 @@
+.wrapper{
+    border-top: 0.01em  rgb(29, 29, 31) solid;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.wrapper>div:nth-child(1){
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin: auto 0;
+}
+.wrapper>div:nth-child(2){
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%;
+    margin: auto 0;
+
+}

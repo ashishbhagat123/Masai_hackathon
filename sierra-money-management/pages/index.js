@@ -1,24 +1,22 @@
 import Head from 'next/head'
-import React, {useState} from 'react'
-import styles from '../styles/Home.module.css'
-import Link from "next/link"
-import Navbar from '../Component/Navbar'
-import Sidebar from '../Component/Sidebar'
-import Loan from './Loan'
-import Chat from './Chat'
-
-export default function Home() {
-  const [slide, setSlide] = useState(true);
-  const handleSlide = () => {
-    setSlide(!slide)
+import Webpage from '../components/Webpage';
+import {dbConnect, jsonify } from "../middleware/db"
+import User from "../Models/user"
+export async function getServerSideProps(context){
+  dbConnect()
+  const users = await User.find({}).exec()
+  return {
+    props:{
+      users: jsonify(users),
+    }
   }
+}
 
-
+export default function Home({users}) {
   return (
-    <div className={styles.container}>
-      <Sidebar slide = {slide} handleSlide = {handleSlide}/>
-      <Loan slide = {slide}/>
-      {/* <Chat /> */}
+    <div>
+        <Webpage/>
+      {console.log(users)}
     </div>
   )
 }
