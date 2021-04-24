@@ -1,0 +1,47 @@
+.chat_box {
+    position: relative;
+    width: fit-content;
+    min-height: 350px;
+    min-width: 300px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+}
+.button {
+    width: 30%;
+    padding: 3%;
+    background: maroon;
+    border: none;
+    color: white;
+    font-weight: 900;
+}
+.input_div input {
+    padding: 2.5%;
+    width: 75%;
+}
+.input_div {
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.container {
+    padding: 3%;
+    margin: 2.5%;
+    width: fit-content;
+    background: rgba(173, 41, 41, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* "dev": "node server.js" */

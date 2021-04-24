@@ -18,6 +18,8 @@ const BarChart = ({report}) => {
 
 
     return (
+        <div className = {styles.main}>
+            <h1>Loan Payment Chart</h1>
         <div className = {styles.container}>
             <Chart
                 width={"100%"}
@@ -39,6 +41,7 @@ const BarChart = ({report}) => {
                 // For tests
                 rootProps={{ "data-testid": "2" }}
             />
+        </div>
         </div>
     );
 };
