@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next dev",
+    "dev": "node server.js",
+    "build": "next build",
     "start": "next start"
   },
   "dependencies": {
@@ -12,8 +12,10 @@
     "@devexpress/dx-react-chart-material-ui": "^2.7.5",
     "@devexpress/dx-react-core": "^2.7.5",
     "@material-ui/core": "^4.11.3",
+    "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "express": "^4.17.1",
+    "lodash": "^4.17.21",
     "moment": "^2.29.1",
     "mongodb": "^3.6.6",
     "mongoose": "^5.12.5",
@@ -24,6 +26,7 @@
     "react-dom": "^17.0.2",
     "react-google-charts": "^3.0.15",
     "react-icons": "^4.2.0",
+    "react-select": "^4.3.0",
     "reactstrap": "^8.9.0",
     "socket.io": "^4.0.1",
     "socket.io-client": "^4.0.1",

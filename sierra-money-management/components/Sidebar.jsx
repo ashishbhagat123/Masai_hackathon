@@ -8,7 +8,9 @@ import {
 } from "react-icons/gi";
 import { AiFillSetting, AiOutlineLogout } from "react-icons/ai";
 
-const Sidebar = ({ slide, handleSlide }) => {
+const Sidebar = ({ slide, handleSlide, handleButton }) => {
+    
+
     return (
         <div
             className={styles.container}
@@ -42,7 +44,8 @@ const Sidebar = ({ slide, handleSlide }) => {
                 </span>
                 <p>Income</p>
             </div>
-            <div className={styles.links}>
+            <div onClick = {handleButton("exp")} className={styles.links}>
+                
                 <span>
                     <GiPayMoney
                         color="white"
@@ -53,7 +56,7 @@ const Sidebar = ({ slide, handleSlide }) => {
                 </span>{" "}
                 <p>Expenses</p>
             </div>
-            <div className={styles.links}>
+            <div onClick = {handleButton("loan")} className={styles.links}>
                 <span>
                     <GiTakeMyMoney
                         color="white"

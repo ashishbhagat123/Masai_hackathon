@@ -1,5 +1,4 @@
-import createHandler from "../../../middleware/index"
-import User from "../../../Models/user"
+import createHandler from "../../middleware/index"
 const handler = createHandler();
 
 handler.get(async (req, res)=>{
@@ -9,11 +8,11 @@ handler.get(async (req, res)=>{
 
 handler.post(async (req,res)=> {
     try {
-        console.log(req.body)
         const user = await User.create(req.body)
         res.status(201).json(user)
     } catch (error) {
         res.status(501).json(error)
     }
 })
+
 export default handler

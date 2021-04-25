@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import BarChart from "../Component/BarChart";
-import InterestTable from "../Component/InterestTable";
-import PieChart from "../Component/PieChart";
+import BarChart from "../components/BarChart";
+import InterestTable from "../components/InterestTable";
+import PieChart from "../components/PieChart";
 import styles from "../styles/Loan.module.css";
 import calculateEmi from "../Utils/loanCalculator";
 
